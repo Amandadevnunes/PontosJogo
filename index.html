@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem de pontos </title>
+</head>
+
+<body>
+
+    <!-- Um jogador de videogame tem diferentes níveis de dificuldade. o nível "fácil"
+ tem um coeficiente de dificuldade de 1, o nível "médio" tem o coeficiente de dificuladde
+  de 2 e o nível "difícil" tem um coeficiente de deficuldade de 3. Escreva um programa que
+  receba o nome do nível e o número de pontos ganhos pelo jogador como entrada e calcule a pontuação 
+  final multiplicando os pontos ganhos pelo coeficiente de dificuldade correspondente ao nível. -->
+
+
+    <script>
+        
+        
+        let nivel = prompt("Digite o nível do jogador fácil, médio ou difícil:");
+        let pontos = prompt("Digite o valor da pontuação conquistada:");
+        let final;
+
+        switch (nivel) {
+
+            case "fácil":
+                final = "Nível 1" + " " + (pontos * 1)
+                break;
+
+
+            case "médio":
+                final = "Nível 2" + " " + (pontos * 2)
+                break;
+
+            case "difícil":
+                final = "Nível 3" + " " + (pontos * 3)
+                break;
+
+            default:
+                alert("Informação incorreta.")
+                break;
+
+        }
+
+        alert((final) + " " + "pontos");
+
+    </script>
+
+</body>
+
+</html>
